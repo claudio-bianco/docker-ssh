@@ -1,0 +1,11 @@
+version: '3'
+services:
+  remote-host:
+    container_name: remote-host
+    image: remote-host
+    build:
+      context: centos7
+    networks:
+      - net
+networks:
+  net:
