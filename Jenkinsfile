@@ -15,7 +15,7 @@ pipeline {
 //               sh 'ssh -o StrictHostKeyChecking=no root@135.181.203.3 uptime "whoami"'
                sh 'ssh -o StrictHostKeyChecking=no remote_user@172.19.0.2 uptime "whoami"'
                sh 'ssh -v remote_user@172.19.0.2'
-               sh 'scp ./source/filename user@hostname.com:/home/remote_user'
+               sh 'scp ./source/filename remote_user@172.19.0.2:/home/remote_user'
                }
                echo "success lgoin"
             }
