@@ -5,8 +5,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'docker --version'
-                sh 'docker-compose build'
-                sh 'docker-compose up -d'
+                sh 'docker compose build'
+                sh 'docker compose up -d'
             }
         }
         stage('ssh') {
