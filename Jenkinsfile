@@ -13,7 +13,7 @@ pipeline {
             steps {
             sshagent(credentials:['ssh credential']){
 //               sh 'ssh -o StrictHostKeyChecking=no root@135.181.203.3 uptime "whoami"'
-               sh 'ssh -o StrictHostKeyChecking=no remote-host@remote-host uptime "whoami"'
+               sh 'ssh remote-host@remote-host "whoami"'
                }
                echo "success lgoin"
             }
